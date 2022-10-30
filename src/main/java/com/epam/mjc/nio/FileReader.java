@@ -23,6 +23,7 @@ public class FileReader {
                 switch (ch) {
                     case ':':
                         keyEnd = true;
+                        break;
                     case ' ':
                         continue;
                     case '\n':
@@ -32,6 +33,7 @@ public class FileReader {
                     default:
                         break;
                 }
+
 
                 if (!keyEnd) {
                     key.append(ch);
